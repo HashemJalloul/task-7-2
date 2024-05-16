@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<title>Dark Mode</title>
+<style>
+
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .text {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 50%;
+        }
+
+        .text h2 {
+            text-align: center;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        .moon {
+            position: absolute;
+            left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="text">
+        <h2>Hello World</h2>
+        <p>Frontend development refers to the process of creating and designing the user interface of a website or web application. It involves the use of various technologies such as HTML, CSS, and JavaScript to create the visual elements that users interact with.</p>
+    </div>
+    <div class="moon">
+        <i  onclick="Function() "class="fa-solid fa-moon fa-lg"></i>
+    </div>
+
+
+    <script>
+        function Function() {
+            var element = document.querySelector('body');
+            console.log(element.classList.toggle);
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>

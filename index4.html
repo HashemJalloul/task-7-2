@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Invitation</title>
+        <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 500px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .dropdown {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid #916c6c;
+        border-radius: 10px;
+        font-size: 18px;
+        transition: border-color 0.5s ease-in-out;
+        margin-bottom: 10px;
+        background-color: rgb(226 223 223 / 36%)
+    }
+  
+</style>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <select class="dropdown" id="drop" onchange="selectOption()">
+                <option selected disabled hidden>How many team members can I
+                    invite?</option>
+                <option value="none">No one</option>
+                <option value="2ormore">5 or more</option>
+                <option value="5ormore">More than 20</option>
+            </select>
+
+            <select class="dropdown" id="uploded"
+                onchange="selectOption()">
+                <option selected disabled hidden>What is the maximum file upload
+                    size?</option>
+                <option value="5M">10 MB</option>
+                <option value="20MB">20 MB</option>
+                <option value="50MB">30 MB</option>
+            </select>
+
+            <select class="dropdown" id="newPassword"
+                onchange="selectOption()">
+                <option selected disabled hidden>How do I reset my
+                    password?</option>
+
+                <option value="viaPhoneNumber">Via phone number</option>
+                <option value="viaEmail">Via email</option>
+                <option value="skipProcess">Skip process</option>
+            </select>
+        </div>
+
+        <script>
+    function selectOption() {
+        var selectedOption1 = document.getElementById("drop").value;
+        var selectedOption2 = document.getElementById("uploded").value;
+        var selectedOption3 = document.getElementById("newPassword").value;
+        
+        if (selectedOption1 !== "") {
+            alert("Team members selected: " + selectedOption1);
+        }
+
+        if (selectedOption2 !== "") {
+            alert("File upload size selected: " + selectedOption2);
+        }
+
+        if (selectedOption3 !== "") {
+            alert("Password reset method selected: " + selectedOption3);
+        }
+    }
+</script>
+
+    </body>
+</html>

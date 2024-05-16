@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./master.css" />
+        <title>Iphone</title>
+    </head>
+
+    <body>
+        <section class="pro">
+            <div class="co">
+                <div class="text">
+                    <h1>iphone 13 promax</h1>
+                    <p>
+                        The iPhone 13 Pro Max display has rounded corners that
+                        follow a beautiful curved design, and these corners are
+                        within a standard rectangle. When measured as a standard
+                        rectangular shape, the screen is 6.68 inches diagonally
+                        (actual viewable area is less).
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="./imgs/2.png" alt />
+                </div>
+            </div>
+            <div class="part">
+                <img onclick="chang()" class="img1" src="./imgs/2.png" alt>
+                <img onclick="chang2()" class="img2" src="./imgs/1.png" alt>
+                <img onclick="chang3()" class="img3" src="./imgs/3.png" alt>
+                <img onclick="chang4()" class="img4" src="./imgs/4.png" alt>
+                <img onclick="chang5()" class="img5" src="./imgs/5.png" alt>
+            </div>
+        </section>
+
+        <script>
+
+        function chang() {
+
+            let img1 = document.querySelector('.pro')
+
+            img1.style.backgroundColor = '#375b37'
+        }
+        function chang2() {
+
+            let img2 = document.querySelector('.pro')
+
+            img2.style.backgroundColor = '#6262d1a3'
+        }
+        function chang3() {
+
+            let img3 = document.querySelector('.pro')
+
+            img3.style.backgroundColor = '#5bbb5d91'
+        }
+        function chang4() {
+
+            let img4 = document.querySelector('.pro')
+
+            img4.style.backgroundColor = '#67636385'
+        }
+        function chang5() {
+
+            let img5 = document.querySelector('.pro')
+
+            img5.style.backgroundColor = '#8c5555d6'
+        }
+    </script>
+    </body>
+
+</html>
